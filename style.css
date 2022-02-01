@@ -1,0 +1,259 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background: #222 url('./bg.png');
+	background-size: cover;
+	font-family: sans-serif;
+	font-size: 90%;
+	color: #b5b5b5;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+	font-family: 'poppins';
+	text-transform: capitalize;
+}
+
+.sidebar {
+	position: fixed;
+	min-width: 20px;
+	width: 75px;
+	height: 100%;
+	border-right: 1px solid #ededed55;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	z-index: 10;
+}
+.sidebar .social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 30%;
+}
+.social a {
+	transform: rotate(-90deg);
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	z-index: 11;
+}
+.left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 15%;
+	height: 100%;
+}
+
+label {
+	height: 100%;
+	min-width: 75px;
+	background: #fff7;
+	display: grid;
+	place-items: center;
+	z-index: 12;
+}
+.burger .line {
+	background: #fff;
+	height: 2px;
+	width: 15px;
+	margin: 5px;
+}
+
+.logo {
+	font-size: 2rem;
+	color: #eee;
+}
+.nav-links {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	transition: all 0.3 ease;
+}
+.nav-links .search img {
+	width: 20px;
+	height: 20px;
+	margin-right: 25px;
+}
+.nav-links .active,
+a:hover {
+	color: #ca8400;
+}
+
+section {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	padding: 5rem;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.container div {
+	width: 50%;
+	padding-left: 7rem;
+}
+.about h1 {
+	font-size: 4rem;
+	line-height: 3.25rem;
+	margin-bottom: 2rem;
+	color: #fff;
+	width: 75%;
+}
+.about .description {
+	width: 80%;
+	letter-spacing: 1px;
+	line-height: 2rem;
+}
+.description span {
+	text-decoration: underline;
+}
+.heading h3 {
+	font-weight: 500;
+}
+.section {
+	margin-bottom: 4px;
+}
+.progress {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: #b5b5b5;
+	overflow: hidden;
+	border-radius: 1px;
+	margin: 0.5rem 0 2rem;
+	opacity: 0.7;
+}
+.progress:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 75%;
+	height: 100%;
+	background-color: #ca8400;
+}
+.heading h4 {
+	color: #fff;
+	font-size: 110%;
+}
+footer {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 12rem;
+	padding: 0 7rem;
+	background: #222222be;
+	backdrop-filter: blur(5px);
+}
+.cards {
+	padding: 3px;
+	display: flex;
+}
+.card {
+	padding: 10px;
+}
+.card p {
+	line-height: 25px;
+}
+.card a {
+	color: #ca8400;
+}
+footer div h2 {
+	font-variant: small-caps;
+	margin-left: 1rem;
+}
+.events {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.news {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+.news img {
+	height: 125px;
+	margin-top: -2px;
+}
+::selection {
+	background-color: #ca8400;
+}
+@media screen and (max-width: 1004px) {
+	.about h1 {
+		font-size: 3rem;
+	}
+	.about .description {
+		line-height: 1.5rem;
+	}
+	.news p {
+		line-height: 1rem;
+	}
+}
+@media screen and (max-width: 867px) {
+	.nav-links {
+		display: none;
+	}
+	#burger:checked ~ .nav-links {
+		background-color: #2225;
+		backdrop-filter: blur(5px);
+		display: flex;
+		position: fixed;
+		width: 100%;
+		height: 50%;
+		flex-direction: column;
+		transform: translateY(5rem);
+		padding: 10px;
+	}
+	.left {
+		width: 100%;
+		padding-right: 20px;
+	}
+	section {
+		height: 100vh;
+	}
+	.container {
+		flex-direction: column;
+	}
+	.container div {
+		flex-direction: column;
+		width: 100%;
+	}
+	footer {
+		flex-direction: column;
+		height: 25rem;
+	}
+	.events,
+	.news {
+		width: 90%;
+	}
+	.cards {
+		justify-content: space-between;
+		width: 100%;
+	}
+}
