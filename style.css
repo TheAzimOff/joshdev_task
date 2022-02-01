@@ -251,6 +251,7 @@ footer div h2 {
 	.events,
 	.news {
 		width: 90%;
+                flex-direction: column;
 	}
 	.cards {
 		justify-content: space-between;
