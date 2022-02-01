@@ -256,4 +256,7 @@ footer div h2 {
 		justify-content: space-between;
 		width: 100%;
 	}
+        .about h1 {
+		font-size: 2rem;
+	}
 }
