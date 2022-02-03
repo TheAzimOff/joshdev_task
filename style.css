@@ -240,7 +240,7 @@ footer div h2 {
 	}
 	.container {
 		flex-direction: column;
-padding: 1rem;
+		padding: 1rem;
 	}
 	.container div {
 		flex-direction: column;
@@ -249,7 +249,7 @@ padding: 1rem;
 	footer {
 		flex-direction: column;
 		min-height: 25rem;
-		padding: 20px 10px;
+		padding: 30px 10px;
 	}
 	.events,
 	.news {
