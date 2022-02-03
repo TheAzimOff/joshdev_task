@@ -247,7 +247,7 @@ padding: 1rem;
 	}
 	footer {
 		flex-direction: column;
-		height: 25rem;
+		min-height: 25rem;
 	}
 	.events,
 	.news {
