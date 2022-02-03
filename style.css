@@ -239,6 +239,7 @@ footer div h2 {
 	}
 	.container {
 		flex-direction: column;
+padding: 1rem;
 	}
 	.container div {
 		flex-direction: column;
