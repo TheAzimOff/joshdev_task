@@ -213,6 +213,7 @@ footer div h2 {
 	}
 	.news p {
 		line-height: 1rem;
+		width: 70%;
 	}
 }
 @media screen and (max-width: 867px) {
