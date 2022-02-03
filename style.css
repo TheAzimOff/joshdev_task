@@ -158,7 +158,7 @@ section {
 	font-size: 110%;
 }
 footer {
-	overflow: hidden;
+	overflow-x: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
